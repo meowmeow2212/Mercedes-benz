@@ -46,4 +46,65 @@ html, body, a {
   border-color: #29303b;
   color: #29303b;
 }
+
+.slideWrap .slideWrap__item {
+  position: relative;
+}
+
+.slideWrap .slideWrap__item .slideWrap__caption {
+  background: rgba(0, 0, 0, 0.35);
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 21px 13px 31px;
+  position: absolute;
+  width: 100%;
+  z-index: 15;
+  color: #fff;
+}
+
+.slideWrap .slideWrap__item .slideWrap__caption span {
+  display: none;
+}
+
+.slideWrap .slideWrap__item .slideWrap__caption h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.slideWrap .slideWrap__item .slideWrap__caption p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  padding-left: 10px;
+}
+
+.slideWrap .slideWrap__item .slideWrap__caption:hover {
+  height: 130px;
+  transition: all 0.5s;
+}
+
+.slideWrap .slideWrap__item .slideWrap__caption:hover span {
+  display: block;
+}
+
+.page-link {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.page-link:hover {
+  background-color: transparent;
+  color: #00adef;
+}
+
+.slider .pagination li.active {
+  border: none;
+  border-bottom: #00adef;
+}
 /*# sourceMappingURL=main.css.map */
