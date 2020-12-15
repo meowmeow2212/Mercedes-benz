@@ -107,4 +107,48 @@ html, body, a {
   border: none;
   border-bottom: #00adef;
 }
+
+.new__showMore {
+  margin: 10px auto;
+}
+
+.content {
+  padding: 20px 0;
+  color: #fff;
+  max-width: 1680px;
+  margin: auto;
+}
+
+.content .content__heading {
+  list-style: none;
+}
+
+.more__topics {
+  max-width: 1680px;
+  margin: auto;
+  color: #fff;
+}
+
+.more__topics .topic_content .moretopics-hr {
+  height: 1px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.more__topics .topic_content ul {
+  list-style: none;
+}
+
+.more__topics .topic_content ul li {
+  padding-bottom: 10px;
+}
+
+.more__topics .topic_content ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.more__topics .topic_content ul li a:hover {
+  color: #00adef;
+}
 /*# sourceMappingURL=main.css.map */
