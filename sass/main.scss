@@ -8,6 +8,7 @@
 
 //Base
 @import './Base/reset';
+
 // chứa 
 @import './Base/customize';
 
@@ -18,10 +19,16 @@
 
 //Layout
 @import './Layouts/header';
+@import './Layouts/mercedes__carousel';
+@import './Layouts/search';
+@import './Layouts/intro';
+@import './Layouts/channel';
 @import './Layouts/new';
 @import './Layouts/content';
-@import './Layouts/more_topics';
-
+@import './Layouts/more__toppics';
+@import './Layouts/stay__informed';
+@import './Layouts/brandhub';
+@import './Layouts/footer';
 //Page
 // chứa các thành phần riêng của mỗi phần trang web
 

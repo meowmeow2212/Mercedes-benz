@@ -1,0 +1,54 @@
+// MERCEDES CAROUSEL
+
+.mercedes__carousel {
+    width: 100%;
+    
+
+    .carousel__content {
+        .carousel__item {
+            position: relative;
+            height: 800px;
+            .item__img {
+                width: 100%;
+                height: 800px;
+                display: block;
+            }
+
+            .item__content {
+                position: absolute;
+                top: 25%;
+                left: 10%;
+                width: 40%;
+                margin: 0 auto;
+
+                h1 {
+                    font-size: 45px;
+                    line-height: 60px;
+                    color: $color-white-0;
+                    font-weight: $fw-normal;
+                }
+            }
+        }
+    }
+}
+
+// max-width:768px
+@include reponsive("medium") {
+    .mercedes__carousel {
+        height: 800px;
+        .carousel__content {
+            .carousel__item {
+                .item__content {
+                    position: relative;
+                    width: 90%;
+                    top: 0%;
+                    left: 0%;
+                    height: 200px;
+                    h1{
+                        @include typeText(34px, $color-black-0, $fw-normal);
+                    }
+                }
+            }
+        }
+    }
+}

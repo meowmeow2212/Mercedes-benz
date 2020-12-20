@@ -1,0 +1,65 @@
+// FOOTER
+
+.footer {
+    background: $bg-color-0;
+    padding: $pd-1;
+    @include typeText($fs-0, #999, $fw-normal);
+
+    .footer__container {
+        width: 97%;
+        margin: 0 auto;
+
+        a {
+            color: $color-white-0;
+            text-decoration: none;
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+    .footer__content {
+        padding-top: 30px;
+        margin: 0 $mg-0;
+
+        .item__Deu {
+            padding-left: $pd-1;
+            a {
+                text-decoration: none;
+                @include typeText($fs-0,$color-blue, $fw-normal);
+                &:hover {
+                    color: $color-blue-1;
+                }
+            }
+        }
+        .footer__item {
+            display: inline;
+            ul {
+                list-style: none;
+                li {
+                    display: inline;
+                    padding: 0 $pd-0;
+                    a {
+                        text-decoration: none;
+                        @include typeText($fs-0, #636363, $fw-normal);
+                        &:hover {
+                            color: $color-blue;
+                        }
+                    }
+                }
+            }
+            .item {
+                padding: 0;
+            }
+
+            .item__1 {
+                float: left;
+                ul {
+                    text-align: right;
+                }
+            }
+            .item__2 {
+                float: left;
+            }
+        }
+    }
+}

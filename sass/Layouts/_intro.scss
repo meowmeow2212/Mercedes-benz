@@ -1,0 +1,36 @@
+// INTRO
+
+.intro {
+    background: $bg-color-0;
+    padding-top: $pd-2;
+    padding-bottom: $pd-2;
+   
+    .intro__container {
+        width: 85%;
+        margin: 0 auto;
+        .intro__content {
+            padding-left: 0;
+            h2 {
+                line-height: 40px;
+                @include typeText($fs-3 + 3, $color-white-0, $fw-normal);
+            }
+            p{
+                padding-right: 20%;
+                text-align: justify;
+                @include typeText($fs-1, $color-white-0, $fw-normal);
+                a{
+                    @include typeText($fs-1, $color-blue, $fw-normal);
+                    &:hover{
+                        color: #0088c6;
+                    }
+                }
+            }
+
+            .intro__item{
+                margin-bottom: $mg-0;
+            }
+
+
+        }
+    }
+}

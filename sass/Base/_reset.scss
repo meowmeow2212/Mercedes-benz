@@ -7,8 +7,8 @@
 html, body, a{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    background: $color-black-0;
-    color: $color-white-0;
+    background: $bg-color-0;
+     color: $color-white-0;
     text-align: left;
     @include typeText($fs-0, $color-black-0, $fw-normal);
 }

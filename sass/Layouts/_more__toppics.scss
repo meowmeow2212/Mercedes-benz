@@ -1,0 +1,42 @@
+//More topics
+
+.more__topics {
+    background: $bg-color-0;
+    @include typeText($fs-1 + 1, #999, $fw-normal);
+
+    .topics__container {
+        width: 97%;
+        margin: 0 auto;
+
+        .topics__header {
+            // border-bottom: 1px solid #333;
+            margin: 0;
+
+            .topics__item {
+                padding: 0;
+                h2 {
+                    @include typeText($fs-3 + 6, $color-white-0, $fw-normal);
+                    line-height: 40px;
+                }
+
+                hr {
+                    background: #333;
+                    margin: $mg-2 0;
+                }
+                ul {
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: #999;
+                        transition: all 0.2s;
+                        font-size: 14px;
+
+                        &:hover{
+                            color: $color-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+// HEADER
+
+header {
+    color: white;
+    background-color: $bg-color-0;
+    padding-bottom: $pd-1;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    .header_container {
+        width: 90%;
+        margin: 0 auto;
+
+        .header__contact {
+            margin-bottom: $mg-0 - 2px;
+            padding-top: $pd-0;
+            i {
+                border: 1px solid $color-white-0;
+                padding: 2px $pd-0 + 2;
+                margin-right: $mg-0 + 3;
+            }
+
+            span:last-child {
+                padding-left: 40px;
+            }
+        }
+
+        .header__content {
+            align-items: flex-end;
+            padding: 0;
+            padding-bottom: 15px;
+
+            .header__logo{
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .mercedes_img {
+                margin-left: 50px;
+                margin-bottom: 5px;
+            }
+
+            .menu__responsive {
+                .nav-link {
+                    display: none;
+                }
+            }
+            .navbar-collapse{
+                margin-right: 30px;
+            }
+
+            .navbar-brand {
+                padding-bottom: 0;
+            }
+
+            .nav-link {
+                padding-bottom: 0;
+                padding-left: 30px;
+            }
+
+            .nav-link:last-child {
+                padding-right: 0;
+            }
+
+            .nav-item{
+                
+                .vehicles{
+                    cursor: pointer;
+                }
+
+                &:hover{
+                    .nav-link{
+                        color: $color-blue;
+                    }
+                    .vehicles{
+                        color: $color-white-0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header__content {
+        .header__menu {
+            display: none;
+        }
+
+        .menu__responsive {
+            .nav-link {
+                display: block !important;
+                color: $color-white-0;
+            }
+            button {
+                display: block;
+            }
+        }
+    }
+}
+
+// max-width:768px
+@include reponsive("medium") {
+    .header__contact {
+        .contact__Pro {
+            display: none;
+        }
+
+        .contact__Deu {
+            padding-left: $pd-0 !important;
+        }
+    }
+}

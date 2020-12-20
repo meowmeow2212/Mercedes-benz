@@ -23,536 +23,1011 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
+     <!-- Scoll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <header>
+        <div class="header_container">
+            <p class="text-right header__contact">
+                <i class="fa fa-info"></i>
+                <span class="contact__Pro"> Provider/Privacy Statement</span>
+                <span class="contact__Deu">Deutsch</span>
+            </p>
 
-    <header></header>
-    <section class="mercedes__carousel"></section>
-    <section class="search"></section>
-    <section class="intro"></section>
-    <section class="channel"></section>
-    <section class="new">
-         <!--Carousel Wrapper data-ride="carousel"-->
-      <div id="carousel-example-1z" class="carousel slide carousel-fade" style="max-width:1680px;margin: auto;" >
-       <!--Indicators-->
-       <!-- <ol class="carousel-indicators container">
-        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-      </ol> -->
-      <nav aria-label="Page navigation example" class="d-flex justify-content-center slider" >
-        <ul class="pagination">
-          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"><button class="page-link" href="#"><i class="pl-1 pr-1 fa fa-newspaper"></i> New</button></li>
-          <li data-target="#carousel-example-1z" data-slide-to="1" ><button class="page-link" href="#"><i class="pl-1 pr-1 fa fa-star"></i> Popular</button></li>
-          <li data-target="#carousel-example-1z" data-slide-to="2"><button class="page-link" href="#"><i class="pl-1 pr-1 fa fa-play"></i>Video</b></li>
-        </ul>
-      </nav>
-        <div class="carousel-inner" role="listbox">
-    <!--First slide-->
-    <div class="carousel-item active">
-      <div class="d-block w-100"alt="First slide">
-          <div class="slideWrap">
-            <!-- row1 -->
-            <div class="row no-gutters">
-              <div class="col-xl-6 col-lg-12 slideWrap__item">
-                 <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mbvideocar-cla-220-lorenz-klapfer-moritz-kluth-2560x1440.webp" alt="">
-                 <div class="slideWrap__caption">
-                   <h3 class="pb-0">#MBvideocar: CLA 220 d – Lose yourself.</h3>
-                   <p class="pb-3"> CLA 220 d:  4,6–4,4 l/100 km 120–115 g/km.¹</p>
-                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus!</span>
-                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-12">
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item"  >
-                     <img style="height: 100%; width: 100%;" class="img-fluid"  src="./img/mercedes-benz-g-500-2019-teaser-image-2560x1440-08-2020.jpeg" alt="">
-                     <div class="slideWrap__caption">
-                      <h3>The G-Class Experience Center. </h3>
-                      <span>The G-Class Experience Center provides breathtaking adventures and unforgettable memories. </span>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                      <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-g-class-w463-brandhub-manufaktur-teaser-2560x1440-06-2020.jpeg" alt="">
-                      <div class="slideWrap__caption">
-                        <h3>G manufaktur </h3>
-                        <span>With the G manufaktur's individualisation program, the choice of materials and colours is almost limitless.</span>
-                       </div>
-                  </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark header__content">
+                <div class="header__logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                    <a href="#" class="mercedes_img">
+                        <img src="./img/brand-without-claim.svg" alt="">
+                    </a>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                     <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mercedes-benz-the-new-gle-coupe-express-your-inner-strength-2560x1440.webp" alt="">
-                     <div class="slideWrap__caption">
-                      <h3>GLB: Completely versatile.</h3>
-                      <span>Seven seats, compact dimensions, plenty of high-tech: Mercedes-Benz brings new flexibility to the SUV clas...</span>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 slideWrap__item ">
-                      <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-livestream-meet-the-maybach-s-class-digital-2-3400x1440.webp" alt="">
-                      <div class="slideWrap__caption pt-1">
-                        <h3>The exterior design of the new Mercedes-Maybach S-Class</h3>
-                        <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of sophisticated luxury. Check it o...</span>
-                       </div>
-                  </div>
+
+
+                <div class="navbar-collapse collapse" id="movieNavBar">
+                    <ul class="nav navbar-nav ml-auto header__menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Company</a>
+                        </li>
+                        <li class="nav-item ">
+                            <!-- <a class="nav-link active " href="#">Vehicles
+                            </a> -->
+
+                            <a class="nav-link active vehicles" aria-current="page" data-toggle="modal"
+                                data-target="#vehicles">
+                                Vehicles
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Innovation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Museum & History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Lifestyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#search"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+
                 </div>
-              </div>
+                <div class="row menu__responsive">
+                    <a class="nav-link active" href="#"><i class="fa fa-search"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="mercedes__carousel">
+        <div class="carousel__content owl-carousel owl-theme">
+            <div class="carousel__item">
+                <div>
+                    <img src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="" class="item__img">
+                </div>
+                <div class="item__content">
+                    <h1>The new Mercedes-Maybach S‑Class. </h1>
+                    <button class="btn btn-black">Lear more</button>
+                </div>
             </div>
-            <!-- row2 -->
-            <div class="row no-gutters">
-              <div class="col-xl-3 col-lg-6 slideWrap__item">
-                <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-g-class-w463-strong-stories-stage-2560x1440-11-2020.jpeg" alt="">
-                <div class="slideWrap__caption">
-                  <h3>One car. Many stories.</h3>
-                  <span>The G-Class is a car built for stories. Discover its adventurous anecdotes from all over the world.</span>
-                 </div>
-             </div>
-             <div class="col-xl-3 col-lg-6 slideWrap__item">
-              <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="">
-              <div class="slideWrap__caption pt-1">
-                <h3>Mercedes-Benz celebrates Copenhagen Fashion Week.</h3>
-                <span>In August, Mercedes-Benz Fashion partnered with Danish supermodel Helena Christensen at Copenhagen Fashion ...</span>
-               </div>
-           </div>
-           <div class="col-xl-3 col-lg-6 slideWrap__item">
-            <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-gle-coupe-c167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.jpeg" alt="">
-            <div class="slideWrap__caption">
-              <h3>GLC: Discipline and commitment.</h3>
-              <span>Passion and perfection: visiting dressage rider Jessica von Bredow-Werndl with the GLC.</span>
-             </div>
-         </div>
-         <div class="col-xl-3 col-lg-6 slideWrap__item">
-          <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-me-magazine-my-job-is-my-life-2560x1440.webp" alt="">
-          <div class="slideWrap__caption">
-            <h3>“My job is my life.” </h3>
-            <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of sophisticated luxury. Check it o...</span>
-           </div>
-       </div>
+            <div class="carousel__item">
+                <div>
+                    <img src="./img/01-mercedes-benz-mercedes-maybach-s-class-2021-z223-3400x1440.webp" alt=""
+                        class="item__img">
+                </div>
+                <div class="item__content">
+                    <h1>The new Mercedes-Maybach S‑Class. </h1>
+                    <button class="btn btn-black">Lear more</button>
+                </div>
             </div>
-            <!-- row3 -->
-            <div class="row no-gutters">
-              <div class="col-xl-6 col-lg-12 slideWrap__item">
-                 <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/Mercedes-Benz_EQ_Silver_Arrow_02_M3_P3_16-9jpeg.webp" alt="">
-                 <div class="slideWrap__caption">
-                  <h3>The Mercedes-Benz EQ Silver Arrow 01</h3>
-                  <span>Performance meets design: Get to know Mercedes-Benz EQ Silver Arrow 01.</span>
-                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-12">
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                    <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/formulae_bern_review05jpeg.webp" alt="">
-                    <div class="slideWrap__caption">
-                     <h3>Mercedes-Benz EQ Formula E Tracktime</h3>
-                     <span>Befor the european ABB FIA Formula E Championship races we hit the track with the new EQC and the smart EQ ...</span>
-                    </div>
-                 </div>
-                 <div class="col-xl-6 col-lg-6 slideWrap__item">
-                  <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-classic-magazine-ingenious-duo-2560x1440.jpeg" alt="">
-                  <div class="slideWrap__caption">
-                   <h3>Ingenious duo.</h3>
-                   <span>With entrepreneurial courage and power of innovation, they created a global brand: AMG! </span>
-                  </div>
-               </div>
+            <div class="carousel__item">
+                <div>
+                    <img src="./img/01-mercedes-benz-livestream-meet-the-maybach-s-class-digital-2-3400x1440.webp"
+                        alt="" class="item__img">
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                    <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
-                    <div class="slideWrap__caption">
-                     <h3>Leonie von Hase tests the new GLB.</h3>
-                     <span>In this video series the new GLB is put through its paces by Mercedes-Benz brand ambassador Leonie von Hase...</span>
-                    </div>
-                 </div>
-                 <div class="col-xl-6 col-lg-6 slideWrap__item">
-                  <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-classic-magazine-lago-maggiore-2560x1440.webp" alt="">
-                  <div class="slideWrap__caption">
-                   <h3>Just like the old days.</h3>
-                   <span>Sophie Schillgalies, her parents and her boyfriend normally drive cars from Mercedes-AMG. On Lake Maggiore ...</span>
-                  </div>
-               </div>
+                <div class="item__content">
+                    <h1> Digital World Premiere of the new Mercedes-Maybach S-Class. </h1>
+                    <button class="btn btn-black">Lear more</button>
                 </div>
-              </div>
             </div>
-          </div>
-      </div>
-    </div>
-    <!--/First slide-->
-    <!--Second slide-->
-    <div class="carousel-item">
-      <div class="d-block w-100"alt="First slide">
-          <div class="slideWrap">
-            <!-- row1 -->
-            <div class="row no-gutters">
-              <div class="col-xl-6 col-lg-12 slideWrap__item">
-                 <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mercedes-benz-design-uebersicht-2560x1440-2560x1440.webp" alt="">
-                 <div class="slideWrap__caption">
-                   <h3 class="pb-0">Design</h3>
-                   <span>The designers at Mercedes-Benz are reconciling tradition and modernity in designing the cars for the future...</span>
-                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-12">
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item" >
-                     <img style="height: 100%; width: 100%;" class="img-fluid"  src="./img/mercedes-benz-g-class-w463-brandhub-manufaktur-teaser-2560x1440-06-2020.jpeg" alt="">
-                     <div class="slideWrap__caption">
-                      <h3>G-Class world </h3>
-                      <span>Discover the multifaceted world of the G-Class and be inspired by the values that this exceptional off-road... </span>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                      <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
-                      <div class="slideWrap__caption">
-                        <h3>The new Mercedes-Maybach S-Class.</h3>
-                        <span>The brand’s hallmark combination of ultimate luxury and cutting-edge technology.</span>
-                       </div>
-                  </div>
+            <div class="carousel__item">
+                <div>
+                    <img src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="" class="item__img">
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                     <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mercedes-benz-the-new-gle-coupe-express-your-inner-strength-2560x1440.webp" alt="">
-                     <div class="slideWrap__caption">
-                      <h3>Mercedes-Benz Vehicle Overview.</h3>
-                      <span>Discover the current vehicle models from Mercedes-Benz: Passenger vehicles, vans, trucks and buses.</span>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 slideWrap__item ">
-                      <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-me-2560x1440.webp" alt="">
-                      <div class="slideWrap__caption pt-1">
-                        <h3>Mercedes me.</h3>
-                        <span>Check your vehicle’s data or take a look at your contracts – this is the future of mobility with Mercedes m...</span>
-                       </div>
-                  </div>
+                <div class="item__content">
+                    <h1> Five years of She’s Mercedes. </h1>
+                    <button class="btn btn-black">Lear more</button>
                 </div>
-              </div>
             </div>
-            <!-- row2 -->
-            <div class="row no-gutters">
-              <div class="col-xl-3 col-lg-6 slideWrap__item">
-                <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-g-class-w463-strong-stories-stage-2560x1440-11-2020.jpeg" alt="">
-                <div class="slideWrap__caption">
-                  <h3>Sports</h3>
-                  <span>The G-Class is a car built for stories. Discover its adventurous anecdotes from all over the world.</span>
-                 </div>
-             </div>
-             <div class="col-xl-3 col-lg-6 slideWrap__item">
-              <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="">
-              <div class="slideWrap__caption pt-1">
-                <h3>Mercedes-Benz Classic: Classics, festivals and milestones.</h3>
-                <span>In August, Mercedes-Benz Fashion partnered with Danish supermodel Helena Christensen at Copenhagen Fashion ...</span>
-               </div>
-           </div>
-           <div class="col-xl-3 col-lg-6 slideWrap__item">
-            <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-gle-coupe-c167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.jpeg" alt="">
-            <div class="slideWrap__caption">
-              <h3>Inspired by the future: The VISION AVTR.</h3>
-              <span>Passion and perfection: visiting dressage rider Jessica von Bredow-Werndl with the GLC.</span>
-             </div>
-         </div>
-         <div class="col-xl-3 col-lg-6 slideWrap__item">
-          <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-me-magazine-my-job-is-my-life-2560x1440.webp" alt="">
-          <div class="slideWrap__caption">
-            <h3>The new Mercedes-Maybach S-Class.</h3>
-            <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of sophisticated luxury. Check it o...</span>
-           </div>
-       </div>
+            <div class="carousel__item">
+                <div>
+                    <img src="./img/01-mercedes-benz-vehicles-s-class-2020-br-223-3400x1440.jpeg" alt=""
+                        class="item__img">
+                </div>
+                <div class="item__content">
+                    <h1> The history of the S-Class. </h1>
+                    <button class="btn btn-black">Lear more</button>
+                </div>
             </div>
-            <!-- row3 -->
-            <div class="row no-gutters">
-              <div class="col-xl-6 col-lg-12 slideWrap__item">
-                 <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mercedes-benz-innovation-vision-urbanetic-2560x1440.jpeg" alt="">
-                 <div class="slideWrap__caption">
-                  <h3>Mercedes-Benz: Innovation.</h3>
-                  <span>Performance meets design: Get to know Mercedes-Benz EQ Silver Arrow 01.</span>
-                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-12">
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                    <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/formulae_bern_review05jpeg.webp" alt="">
-                    <div class="slideWrap__caption">
-                     <h3>Mercedes-Benz Museum Stuttgart – 130..</h3>
-                     <span>Befor the european ABB FIA Formula E Championship races we hit the track with the new EQC and the smart EQ ...</span>
-                    </div>
-                 </div>
-                 <div class="col-xl-6 col-lg-6 slideWrap__item">
-                  <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-classic-magazine-ingenious-duo-2560x1440.jpeg" alt="">
-                  <div class="slideWrap__caption">
-                   <h3>Passenger Cars</h3>
-                   <span>With entrepreneurial courage and power of innovation, they created a global brand: AMG! </span>
-                  </div>
-               </div>
+            <div class="carousel__item">
+                <div>
+                    <img src="./img/01-mercedes-benz-museum-10-absolute-beauties-2560x1440.webp" alt=""
+                        class="item__img">
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                    <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
-                    <div class="slideWrap__caption">
-                     <h3>The new Mercedes-Maybach.</h3>
-                     <span>In this video series the new GLB is put through its paces by Mercedes-Benz brand ambassador Leonie von Hase...</span>
-                    </div>
-                 </div>
-                 <div class="col-xl-6 col-lg-6 slideWrap__item">
-                  <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-classic-magazine-lago-maggiore-2560x1440.webp" alt="">
-                  <div class="slideWrap__caption">
-                   <h3>Vehicle design between intelligence & emotion. </h3>
-                   <span>Sophie Schillgalies, her parents and her boyfriend normally drive cars from Mercedes-AMG. On Lake Maggiore ...</span>
-                  </div>
-               </div>
+                <div class="item__content">
+                    <h1 style="color: black;"> The history of the S-Class. </h1>
+                    <button class="btn btn-black">Lear more</button>
                 </div>
-              </div>
             </div>
-          </div>
-      </div>
-    </div>
-    <!--/Second slide-->
-    <!--Third slide-->
-    <div class="carousel-item">
-      <div class="d-block w-100" alt="First slide">
-          <div class="slideWrap">
-            <!-- row1 -->
-            <div class="row no-gutters">
-              <div class="col-xl-6 col-lg-12 slideWrap__item">
-                 <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mbvideocar-cla-220-lorenz-klapfer-moritz-kluth-2560x1440.webp" alt="">
-                 <div class="slideWrap__caption">
-                   <h3 class="pb-0">#MBvideocar: CLA 220 d – Lose yourself.</h3>
-                   <p class="pb-3"> CLA 220 d:  4,6–4,4 l/100 km 120–115 g/km.¹</p>
-                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus!</span>
-                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-12">
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item" >
-                     <img style="height: 100%; width: 100%;" class="img-fluid"  src="./img/mercedes-benz-g-500-2019-teaser-image-2560x1440-08-2020.jpeg" alt="">
-                     <div class="slideWrap__caption">
-                      <h3>The G-Class Experience Center. </h3>
-                      <span>The G-Class Experience Center provides breathtaking adventures and unforgettable memories. </span>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                      <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-g-class-w463-brandhub-manufaktur-teaser-2560x1440-06-2020.jpeg" alt="">
-                      <div class="slideWrap__caption">
-                        <h3>G manufaktur </h3>
-                        <span>With the G manufaktur's individualisation program, the choice of materials and colours is almost limitless.</span>
-                       </div>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                     <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/00-mercedes-benz-the-new-gle-coupe-express-your-inner-strength-2560x1440.webp" alt="">
-                     <div class="slideWrap__caption">
-                      <h3>GLB: Completely versatile.</h3>
-                      <span>Seven seats, compact dimensions, plenty of high-tech: Mercedes-Benz brings new flexibility to the SUV clas...</span>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 slideWrap__item ">
-                      <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-livestream-meet-the-maybach-s-class-digital-2-3400x1440.webp" alt="">
-                      <div class="slideWrap__caption pt-1">
-                        <h3>The exterior design of the new Mercedes-Maybach S-Class</h3>
-                        <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of sophisticated luxury. Check it o...</span>
-                       </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- row2 -->
-            <div class="row no-gutters">
-              <div class="col-xl-3 col-lg-6 slideWrap__item">
-                <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-g-class-w463-strong-stories-stage-2560x1440-11-2020.jpeg" alt="">
-                <div class="slideWrap__caption">
-                  <h3>One car. Many stories.</h3>
-                  <span>The G-Class is a car built for stories. Discover its adventurous anecdotes from all over the world.</span>
-                 </div>
-             </div>
-             <div class="col-xl-3 col-lg-6 slideWrap__item">
-              <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="">
-              <div class="slideWrap__caption pt-1">
-                <h3>Mercedes-Benz celebrates Copenhagen Fashion Week.</h3>
-                <span>In August, Mercedes-Benz Fashion partnered with Danish supermodel Helena Christensen at Copenhagen Fashion ...</span>
-               </div>
-           </div>
-           <div class="col-xl-3 col-lg-6 slideWrap__item">
-            <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-gle-coupe-c167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.jpeg" alt="">
-            <div class="slideWrap__caption">
-              <h3>GLC: Discipline and commitment.</h3>
-              <span>Passion and perfection: visiting dressage rider Jessica von Bredow-Werndl with the GLC.</span>
-             </div>
-         </div>
-         <div class="col-xl-3 col-lg-6 slideWrap__item">
-          <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-me-magazine-my-job-is-my-life-2560x1440.webp" alt="">
-          <div class="slideWrap__caption">
-            <h3>“My job is my life.” </h3>
-            <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of sophisticated luxury. Check it o...</span>
-           </div>
-       </div>
-            </div>
-            <!-- row3 -->
-            <div class="row no-gutters">
-              <div class="col-xl-6 col-lg-12 slideWrap__item">
-                 <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/mercedes-benz-making-of-mercedes-benz-suv-models-2560x1440.webp" alt="">
-                 <div class="slideWrap__caption">
-                  <h3>The Mercedes-Benz EQ Silver Arrow 01</h3>
-                  <span>Performance meets design: Get to know Mercedes-Benz EQ Silver Arrow 01.</span>
-                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-12">
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                    <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/formulae_bern_review05jpeg.webp" alt="">
-                    <div class="slideWrap__caption">
-                     <h3>Mercedes-Benz EQ Formula E Tracktime</h3>
-                     <span>Befor the european ABB FIA Formula E Championship races we hit the track with the new EQC and the smart EQ ...</span>
-                    </div>
-                 </div>
-                 <div class="col-xl-6 col-lg-6 slideWrap__item">
-                  <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-classic-magazine-ingenious-duo-2560x1440.jpeg" alt="">
-                  <div class="slideWrap__caption">
-                   <h3>Ingenious duo.</h3>
-                   <span>With entrepreneurial courage and power of innovation, they created a global brand: AMG! </span>
-                  </div>
-               </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-xl-6 col-lg-6 slideWrap__item">
-                    <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
-                    <div class="slideWrap__caption">
-                     <h3>Leonie von Hase tests the new GLB.</h3>
-                     <span>In this video series the new GLB is put through its paces by Mercedes-Benz brand ambassador Leonie von Hase...</span>
-                    </div>
-                 </div>
-                 <div class="col-xl-6 col-lg-6 slideWrap__item">
-                  <img style="height: 100%; width: 100%;" class="img-fluid" src="./img/01-mercedes-benz-classic-magazine-lago-maggiore-2560x1440.webp" alt="">
-                  <div class="slideWrap__caption">
-                   <h3>Just like the old days.</h3>
-                   <span>Sophie Schillgalies, her parents and her boyfriend normally drive cars from Mercedes-AMG. On Lake Maggiore ...</span>
-                  </div>
-               </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    <!--/Third slide-->
-  </div>
-  <!--/.Slides-->
-      </div>
-      <!--/.Carousel Wrapper-->
-      <div class="showMore__button d-flex justify-content-center pt-3 pb-3">
-        <button class="new__showMore btn btn-dark m-auto">SHOW MORE<i class="fa fa-angle-down pl-3"></i></button>
-      </div>
+        </div>
     </section>
-    <section class="content text-white">
-        <ul class="content__heading d-flex justify-content-start">
-           <li class="text-white pr-3"><i class="fa fa-gas-pump pr-2"></i>Kraftstoffverbrauch kombiniert</li>
-           <li class="text-white pr-3"><i class="fa fa-leaf pr-2"></i>Kraftstoffverbrauch kombiniert</li>
-           <li class="text-white pr-3"><i class="fas fa-plug pr-2"></i>Kraftstoffverbrauch kombiniert</li>
-        </ul>
-        <p>
-          Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren ermittelt. Es handelt sich um die „NEFZ-CO₂-Werte“ i. S. v. Art. 2 Nr. 1 Durchführungsverordnung (EU) 2017/1153. 
-          Die Kraftstoffverbrauchswerte wurden auf Basis dieser Werte errechnet. Der Stromverbrauch wurde auf der Grundlage der VO 692/2008/EG ermittelt. Weitere Informationen zum offiziellen 
-          Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch
-           aller neuen Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.
-        </p>
-        <p>
-          Angaben zu Kraftstoffverbrauch, Stromverbrauch und CO₂-Emissionen sind vorläufig und wurden vom Technischen Dienst
-           für das Zertifizierungsverfahren nach Maßgabe des WLTP-Prüfverfahrens ermittelt und in NEFZ-Werte korreliert. 
-           Eine EG-Typgenehmigung und Konformitätsbescheinigung mit amtlichen Werten liegen noch nicht vor. 
-           Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
-        </p>
-        <p>
-          Stromverbrauch und Reichweite wurden auf der Grundlage der VO 692/2008/EG ermittelt.
-          Stromverbrauch und Reichweite sind abhängig von der Fahrzeugkonfiguration. Weitere Informationen 
-          zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen
-          können dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen 
-          Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH unter 
-          www.dat.de unentgeltlich erhältlich ist.
-        </p>
-        <p>
-          Angaben zu Stromverbrauch und Reichweite sind vorläufig und wurden vom Technischen Dienst für das Zertifizierungsverfahren 
-          nach Maßgabe der UN/ECE-Regelung Nr. 101 ermittelt. Die EG-Typgenehmigung und eine Konformitätsbescheinigung mit amtlichen Werten 
-          liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind möglich.
-        </p>
+    <section class="search" data-aos="fade-up" >
+        <div class="search__container" id="search">
+            <div class="input-group search__input">
+                <input type="text" class="form-control" placeholder="I am looking for..."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="more__topics">
-      <div class="topic_content">
-        <div class="row no-gutters">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 brandhub-sitemapgroup">
-                <h2>More topics</h2>
-                <br>
-                <hr class="moretopics-hr">
-                <ul>
-                    <li><a href="">Electromobility</a></li>
-                    <li><a href="">Innovation</a></li>
-                    <li><a href="">Design</a></li>
-                    <li><a href="">Exhibitions</a></li>
-                    <li><a href="">Museum & History</a></li>
-                    <li><a href="">Sports</a></li>
-                    <li><a href="">Driving Events</a></li>
-                    <li><a href="">me Convention</a></li>
-                    <li><a href="">Mercedes me Portal</a></li>
-                </ul>
+    <section class="intro" data-aos="fade-up">
+        <div class="intro__container">
+            <div class="col-12 col-lg-12 col-xl-7 intro__content">
+                <h2>Welcome to the Mercedes-Benz international website.</h2>
+                <p>Exclusive reports and current films: experience a broad range of topics from the fascinating world of
+                    Mercedes-Benz. To find out about offers in your location, please go to the local Mercedes-Benz
+                    website.</p>
+                <p class="intro__item">This is the International website of Mercedes-Benz AG.</p>
+                <p>Visitors from the U.S., please visit our U.S. website <a href="#">www.mbusa.com</a>.</p>
+                <button class="btn btn-blue col-12 col-md-5 col-lg-5"> Bring me to my local website </button>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 brandhub-sitemapgroup">
-                <h2>Shopping</h2>
-                <br>
-                <hr class="moretopics-hr">
-                <ul>
-                    <li><a href="">Dealer Search</a></li>
-                    <li><a href="">Mercedes-Benz Accessoires</a></li>
-                    <li><a href="">Mercedes-Benz Collection</a></li>
-                    <li><a href="">Mercedes me connect Store</a></li>
-                    <li><a href="">Service & Parts</a></li>
-                    <li><a href="">Formula 1 Store</a></li>
-                    <li><a href="">Mercedes-Benz Classic Center</a></li>
-                    <li><a href="">Classic Store</a></li>
-                </ul>
+        </div>
+    </section>
+    <section class="channel" data-aos="fade-up">
+        <div class="channel__container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 channel__item">
+                    <img src="./img/eq-channel-tile.jpg" alt="">
+                    <div class="channel__overlay"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 channel__item">
+                    <img src="./img/museum-channel-tile.jpg" alt="">
+                    <div class="channel__overlay"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 channel__item">
+                    <img src="./img/me-channel-tile.jpg" alt="">
+                    <div class="channel__overlay"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 channel__item">
+                    <img src="./img/she-channel-tile.jpg" alt="">
+                    <div class="channel__overlay"></div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 brandhub-sitemapgroup">
-                <h2>All about cars</h2>
-                <br>
-                <hr class="moretopics-hr">
-                <ul>
-                    <li><a href="">Model Overview</a></li>
-                    <li><a href="">Configurator</a></li>
-                    <li><a href="">Test Drive</a></li>
-                    <li><a href="">Mercedes-Maybach</a></li>
-                    <li><a href="">Mercedes me connect</a></li>
-                    <li><a href="">Mercedes-Benz Ex-Factory Driving Aids</a></li>
-                    <li><a href="">WLTP</a></li>
-                    <li><a href="">RDE</a></li>
-                    <li><a href="">Li-Ion UN38.3</a></li>
+        </div>
+    </section>
+    <section class="new" data-aos="fade-up">
+        <!--Carousel Wrapper data-ride="carousel"-->
+        <div id="carousel-example-1z" class="carousel slide carousel-fade" style="max-width:1680px;margin: auto;">
+            <!--Indicators-->
+            <!-- <ol class="carousel-indicators container">
+       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+       <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+     </ol> -->
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center slider">
+                <ul class="pagination">
+                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"><button class="page-link"
+                            href="#"><i class="pl-1 pr-1 fa fa-newspaper"></i> New</button></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="1"><button class="page-link" href="#"><i
+                                class="pl-1 pr-1 fa fa-star"></i> Popular</button></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="2"><button class="page-link" href="#"><i
+                                class="pl-1 pr-1 fa fa-play"></i>Video</b></li>
                 </ul>
+            </nav>
+            <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="d-block w-100" alt="First slide">
+                        <div class="slideWrap">
+                            <!-- row1 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-6 col-lg-12 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/00-mbvideocar-cla-220-lorenz-klapfer-moritz-kluth-2560x1440.webp"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3 class="pb-0">#MBvideocar: CLA 220 d – Lose yourself.</h3>
+                                        <p class="pb-3"> CLA 220 d: 4,6–4,4 l/100 km 120–115 g/km.¹</p>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
+                                            voluptatibus!</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/mercedes-benz-g-500-2019-teaser-image-2560x1440-08-2020.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>The G-Class Experience Center. </h3>
+                                                <span>The G-Class Experience Center provides breathtaking adventures and
+                                                    unforgettable memories. </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/mercedes-benz-g-class-w463-brandhub-manufaktur-teaser-2560x1440-06-2020.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>G manufaktur </h3>
+                                                <span>With the G manufaktur's individualisation program, the choice of
+                                                    materials and colours is almost limitless.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/00-mercedes-benz-the-new-gle-coupe-express-your-inner-strength-2560x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>GLB: Completely versatile.</h3>
+                                                <span>Seven seats, compact dimensions, plenty of high-tech:
+                                                    Mercedes-Benz brings new flexibility to the SUV clas...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item ">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-livestream-meet-the-maybach-s-class-digital-2-3400x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption pt-1">
+                                                <h3>The exterior design of the new Mercedes-Maybach S-Class</h3>
+                                                <span>The new Mercedes-Maybach S-Class expresses the brand-typical
+                                                    experience of sophisticated luxury. Check it o...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row2 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-g-class-w463-strong-stories-stage-2560x1440-11-2020.jpeg"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>One car. Many stories.</h3>
+                                        <span>The G-Class is a car built for stories. Discover its adventurous anecdotes
+                                            from all over the world.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="">
+                                    <div class="slideWrap__caption pt-1">
+                                        <h3>Mercedes-Benz celebrates Copenhagen Fashion Week.</h3>
+                                        <span>In August, Mercedes-Benz Fashion partnered with Danish supermodel Helena
+                                            Christensen at Copenhagen Fashion ...</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-gle-coupe-c167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.jpeg"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>GLC: Discipline and commitment.</h3>
+                                        <span>Passion and perfection: visiting dressage rider Jessica von Bredow-Werndl
+                                            with the GLC.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/01-mercedes-benz-me-magazine-my-job-is-my-life-2560x1440.webp"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>“My job is my life.” </h3>
+                                        <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of
+                                            sophisticated luxury. Check it o...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row3 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-6 col-lg-12 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/Mercedes-Benz_EQ_Silver_Arrow_02_M3_P3_16-9jpeg.webp" alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>The Mercedes-Benz EQ Silver Arrow 01</h3>
+                                        <span>Performance meets design: Get to know Mercedes-Benz EQ Silver Arrow
+                                            01.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/formulae_bern_review05jpeg.webp" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Mercedes-Benz EQ Formula E Tracktime</h3>
+                                                <span>Befor the european ABB FIA Formula E Championship races we hit the
+                                                    track with the new EQC and the smart EQ ...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-classic-magazine-ingenious-duo-2560x1440.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Ingenious duo.</h3>
+                                                <span>With entrepreneurial courage and power of innovation, they created
+                                                    a global brand: AMG! </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Leonie von Hase tests the new GLB.</h3>
+                                                <span>In this video series the new GLB is put through its paces by
+                                                    Mercedes-Benz brand ambassador Leonie von Hase...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-classic-magazine-lago-maggiore-2560x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Just like the old days.</h3>
+                                                <span>Sophie Schillgalies, her parents and her boyfriend normally drive
+                                                    cars from Mercedes-AMG. On Lake Maggiore ...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <div class="d-block w-100" alt="First slide">
+                        <div class="slideWrap">
+                            <!-- row1 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-6 col-lg-12 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/00-mercedes-benz-design-uebersicht-2560x1440-2560x1440.webp" alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3 class="pb-0">Design</h3>
+                                        <span>The designers at Mercedes-Benz are reconciling tradition and modernity in
+                                            designing the cars for the future...</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/mercedes-benz-g-class-w463-brandhub-manufaktur-teaser-2560x1440-06-2020.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>G-Class world </h3>
+                                                <span>Discover the multifaceted world of the G-Class and be inspired by
+                                                    the values that this exceptional off-road... </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>The new Mercedes-Maybach S-Class.</h3>
+                                                <span>The brand’s hallmark combination of ultimate luxury and
+                                                    cutting-edge technology.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/00-mercedes-benz-the-new-gle-coupe-express-your-inner-strength-2560x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Mercedes-Benz Vehicle Overview.</h3>
+                                                <span>Discover the current vehicle models from Mercedes-Benz: Passenger
+                                                    vehicles, vans, trucks and buses.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item ">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-me-2560x1440.webp" alt="">
+                                            <div class="slideWrap__caption pt-1">
+                                                <h3>Mercedes me.</h3>
+                                                <span>Check your vehicle’s data or take a look at your contracts – this
+                                                    is the future of mobility with Mercedes m...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row2 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-g-class-w463-strong-stories-stage-2560x1440-11-2020.jpeg"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>Sports</h3>
+                                        <span>The G-Class is a car built for stories. Discover its adventurous anecdotes
+                                            from all over the world.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="">
+                                    <div class="slideWrap__caption pt-1">
+                                        <h3>Mercedes-Benz Classic: Classics, festivals and milestones.</h3>
+                                        <span>In August, Mercedes-Benz Fashion partnered with Danish supermodel Helena
+                                            Christensen at Copenhagen Fashion ...</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-gle-coupe-c167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.jpeg"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>Inspired by the future: The VISION AVTR.</h3>
+                                        <span>Passion and perfection: visiting dressage rider Jessica von Bredow-Werndl
+                                            with the GLC.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/01-mercedes-benz-me-magazine-my-job-is-my-life-2560x1440.webp"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>The new Mercedes-Maybach S-Class.</h3>
+                                        <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of
+                                            sophisticated luxury. Check it o...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row3 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-6 col-lg-12 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/00-mercedes-benz-innovation-vision-urbanetic-2560x1440.jpeg" alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>Mercedes-Benz: Innovation.</h3>
+                                        <span>Performance meets design: Get to know Mercedes-Benz EQ Silver Arrow
+                                            01.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/formulae_bern_review05jpeg.webp" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Mercedes-Benz Museum Stuttgart – 130..</h3>
+                                                <span>Befor the european ABB FIA Formula E Championship races we hit the
+                                                    track with the new EQC and the smart EQ ...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-classic-magazine-ingenious-duo-2560x1440.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Passenger Cars</h3>
+                                                <span>With entrepreneurial courage and power of innovation, they created
+                                                    a global brand: AMG! </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>The new Mercedes-Maybach.</h3>
+                                                <span>In this video series the new GLB is put through its paces by
+                                                    Mercedes-Benz brand ambassador Leonie von Hase...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-classic-magazine-lago-maggiore-2560x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Vehicle design between intelligence & emotion. </h3>
+                                                <span>Sophie Schillgalies, her parents and her boyfriend normally drive
+                                                    cars from Mercedes-AMG. On Lake Maggiore ...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+                    <div class="d-block w-100" alt="First slide">
+                        <div class="slideWrap">
+                            <!-- row1 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-6 col-lg-12 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/00-mbvideocar-cla-220-lorenz-klapfer-moritz-kluth-2560x1440.webp"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3 class="pb-0">#MBvideocar: CLA 220 d – Lose yourself.</h3>
+                                        <p class="pb-3"> CLA 220 d: 4,6–4,4 l/100 km 120–115 g/km.¹</p>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
+                                            voluptatibus!</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/mercedes-benz-g-500-2019-teaser-image-2560x1440-08-2020.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>The G-Class Experience Center. </h3>
+                                                <span>The G-Class Experience Center provides breathtaking adventures and
+                                                    unforgettable memories. </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/mercedes-benz-g-class-w463-brandhub-manufaktur-teaser-2560x1440-06-2020.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>G manufaktur </h3>
+                                                <span>With the G manufaktur's individualisation program, the choice of
+                                                    materials and colours is almost limitless.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/00-mercedes-benz-the-new-gle-coupe-express-your-inner-strength-2560x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>GLB: Completely versatile.</h3>
+                                                <span>Seven seats, compact dimensions, plenty of high-tech:
+                                                    Mercedes-Benz brings new flexibility to the SUV clas...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item ">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-livestream-meet-the-maybach-s-class-digital-2-3400x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption pt-1">
+                                                <h3>The exterior design of the new Mercedes-Maybach S-Class</h3>
+                                                <span>The new Mercedes-Maybach S-Class expresses the brand-typical
+                                                    experience of sophisticated luxury. Check it o...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row2 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-g-class-w463-strong-stories-stage-2560x1440-11-2020.jpeg"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>One car. Many stories.</h3>
+                                        <span>The G-Class is a car built for stories. Discover its adventurous anecdotes
+                                            from all over the world.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/01-mercedes-benz-shes-mercedes-five-years-3400x1440.jpeg" alt="">
+                                    <div class="slideWrap__caption pt-1">
+                                        <h3>Mercedes-Benz celebrates Copenhagen Fashion Week.</h3>
+                                        <span>In August, Mercedes-Benz Fashion partnered with Danish supermodel Helena
+                                            Christensen at Copenhagen Fashion ...</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-gle-coupe-c167-brandhub-campaign-teaser-2560x1440-03-2020jpeg.jpeg"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>GLC: Discipline and commitment.</h3>
+                                        <span>Passion and perfection: visiting dressage rider Jessica von Bredow-Werndl
+                                            with the GLC.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/01-mercedes-benz-me-magazine-my-job-is-my-life-2560x1440.webp"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>“My job is my life.” </h3>
+                                        <span>The new Mercedes-Maybach S-Class expresses the brand-typical experience of
+                                            sophisticated luxury. Check it o...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row3 -->
+                            <div class="row no-gutters">
+                                <div class="col-xl-6 col-lg-12 slideWrap__item">
+                                    <img style="height: 100%; width: 100%;" class="img-fluid"
+                                        src="./img/mercedes-benz-making-of-mercedes-benz-suv-models-2560x1440.webp"
+                                        alt="">
+                                    <div class="slideWrap__caption">
+                                        <h3>The Mercedes-Benz EQ Silver Arrow 01</h3>
+                                        <span>Performance meets design: Get to know Mercedes-Benz EQ Silver Arrow
+                                            01.</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/formulae_bern_review05jpeg.webp" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Mercedes-Benz EQ Formula E Tracktime</h3>
+                                                <span>Befor the european ABB FIA Formula E Championship races we hit the
+                                                    track with the new EQC and the smart EQ ...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-classic-magazine-ingenious-duo-2560x1440.jpeg"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Ingenious duo.</h3>
+                                                <span>With entrepreneurial courage and power of innovation, they created
+                                                    a global brand: AMG! </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-maybach-s-class-z223-3400x1440.jpeg" alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Leonie von Hase tests the new GLB.</h3>
+                                                <span>In this video series the new GLB is put through its paces by
+                                                    Mercedes-Benz brand ambassador Leonie von Hase...</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 slideWrap__item">
+                                            <img style="height: 100%; width: 100%;" class="img-fluid"
+                                                src="./img/01-mercedes-benz-classic-magazine-lago-maggiore-2560x1440.webp"
+                                                alt="">
+                                            <div class="slideWrap__caption">
+                                                <h3>Just like the old days.</h3>
+                                                <span>Sophie Schillgalies, her parents and her boyfriend normally drive
+                                                    cars from Mercedes-AMG. On Lake Maggiore ...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Third slide-->
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 brandhub-sitemapgroup">
-                <h2>Discover more</h2>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+        <div class="showMore__button d-flex justify-content-center pt-3 pb-3">
+            <button class="new__showMore btn btn-dark m-auto">SHOW MORE<i class="fa fa-angle-down pl-3"></i></button>
+        </div>
+    </section>
+    <section class="content" data-aos="fade-up">
+        <div class="content__container">
 
-                <br>
-                <hr class="moretopics-hr">
+            <div class="row col-12 col-sm-12 col-lg 12 col-xl-7 content__header">
+                <div class="col-6 col-sm-6 col-md-4 content__Kra">
+                    <i class="fa fa-gas-pump"></i>
+                    <span>Kraftstoffverbrauch kombiniert </span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 content__CO">
+                    <i class="fa fa-leaf"></i>
+                    <span>CO₂-Emissionen kombiniert </span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-5 content__Stro">
+                    <i class="fa fa-plug"></i>
+                    <span>Stromverbrauch im kombinierten Testzyklus</span>
+                </div>
+            </div>
+            <div class="col-12">
+                <p>1 Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren ermittelt. Es handelt sich um
+                    die „NEFZ-CO₂-Werte“ i. S. v. Art. 2 Nr. 1 Durchführungsverordnung (EU) 2017/1153. Die
+                    Kraftstoffverbrauchswerte wurden auf Basis dieser Werte errechnet. Der Stromverbrauch wurde auf der
+                    Grundlage der VO 692/2008/EG ermittelt. Weitere Informationen zum offiziellen Kraftstoffverbrauch
+                    und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können dem „Leitfaden über
+                    den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen
+                    Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen
+                    Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.</p>
+                <p>4 Angaben zu Kraftstoffverbrauch, Stromverbrauch und CO₂-Emissionen sind vorläufig und wurden vom
+                    Technischen Dienst für das Zertifizierungsverfahren nach Maßgabe des WLTP-Prüfverfahrens ermittelt
+                    und in NEFZ-Werte korreliert. Eine EG-Typgenehmigung und Konformitätsbescheinigung mit amtlichen
+                    Werten liegen noch nicht vor. Abweichungen zwischen den Angaben und den amtlichen Werten sind
+                    möglich.</p>
+                <p>6 Stromverbrauch und Reichweite wurden auf der Grundlage der VO 692/2008/EG ermittelt. Stromverbrauch
+                    und Reichweite sind abhängig von der Fahrzeugkonfiguration. Weitere Informationen zum offiziellen
+                    Kraftstoffverbrauch und den offiziellen spezifischen CO₂-Emissionen neuer Personenkraftwagen können
+                    dem „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch aller neuen
+                    Personenkraftwagenmodelle“ entnommen werden, der an allen Verkaufsstellen und bei der Deutschen
+                    Automobil Treuhand GmbH unter www.dat.de unentgeltlich erhältlich ist.</p>
+                <p>7 Angaben zu Stromverbrauch und Reichweite sind vorläufig und wurden vom Technischen Dienst für das
+                    Zertifizierungsverfahren nach Maßgabe der UN/ECE-Regelung Nr. 101 ermittelt. Die EG-Typgenehmigung
+                    und eine Konformitätsbescheinigung mit amtlichen Werten liegen noch nicht vor. Abweichungen zwischen
+                    den Angaben und den amtlichen Werten sind möglich.</p>
+            </div>
+        </div>
+    </section>
+    <section class="more__topics" data-aos="fade-up">
+        <div class="topics__container">
+            <div class="row topics__header">
+                <div class="col-12 col-md-12 col-lg-3 topics__item">
+                    <h2>More topics</h2>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Electromobility</a></li>
+                        <li><a href="#">Innovation</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Exhibitions</a></li>
+                        <li><a href="#">Museum & History</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Driving Events</a></li>
+                        <li></li><a href="#">me Convention</a></li>
+                        <li><a href="#">Mercedes me Portal</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 topics__item">
+                    <h2>Shopping</h2>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Dealer Search</a></li>
+                        <li><a href="#">Mercedes-Benz Accessoires</a></li>
+                        <li><a href="#">Mercedes-Benz Collection</a></li>
+                        <li><a href="#">Mercedes me connect Store</a></li>
+                        <li><a href="#">Service & Parts</a></li>
+                        <li><a href="#">Formula 1 Store</a></li>
+                        <li><a href="#">Mercedes-Benz Classic Center</a></li>
+                        <li><a href="#">Classic Store</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 topics__item">
+                    <h2>All about cars</h2>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Model Overview</a></li>
+                        <li><a href="#">Configurator</a></li>
+                        <li><a href="#">Test Drive</a></li>
+                        <li><a href="#">Mercedes-Maybach</a></li>
+                        <li><a href="#">Mercedes me connect</a></li>
+                        <li><a href="#">Mercedes-Benz Ex-Factory Driving Aids</a></li>
+                        <li><a href="#">WLTP</a></li>
+                        <li><a href="#">RDE</a></li>
+                        <li><a href="#">Li-Ion UN38.3</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 topics__item">
+                    <h2>Discover more</h2>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Daimler AG</a></li>
+                        <li>
+                            <Mercedes-Benz href="#">Mercedes-Benz AG</a>
+                        </li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">car2go</a></li>
+                        <li><a href="#">moovel</a></li>
+                        <li><a href="#">Vulnerability Reporting Policy</a></li>
+                        <li><a href="#">Mercedes-Benz Energy</a></li>
+                        <li><a href="#">Mercedes-Benz Bank</a></li>
+                        <li><a href="#">Fleet Sales</a></li>
+                        <li><a href="#">Mercedes-Benz Global Training</a></li>
+                        <li><a href="#">Customer Centre Sindelfingen</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <section class="stay__informed" data-aos="fade-up">
+        <div class="stay__container">
+            <h2>Stay informed</h2>
+            <hr>
+            <div class="col-12 p-0 stay__item">
+                <div class="col-lg-12 col-xl-5 p-0">
+                    <p>Follow us and use the following social media platforms to get in contact with us and to share
+                        your
+                        passion for the brand, products and services of Mercedes-Benz.</p>
+                </div>
 
                 <ul>
-                    <li><a href="">Daimler AG</a></li>
-                    <li><a href="">Mercedes-Benz AG</a></li>
-                    <li><a href="">Newsroom</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="">Career</a></li>
-                    <li><a href="">car2go</a></li>
-                    <li><a href="">moovel</a></li>
-                    <li><a href="">Vulnerability Reporting Policy</a></li>
-                    <li><a href="">Mercedes-Benz Energy</a></li>
-                    <li><a href="">Mercedes-Benz Bank</a></li>
-                    <li><a href="">Fleet Sales</a></li>
-                    <li><a href="">Mercedes-Benz Global Training</a></li>
-                    <li><a href="">Customer Centre Sindelfingen</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
 
         </div>
-    </div>
     </section>
-    <section class="stay__informed"></section>
-    <section class="brandhub"></section>
-    <footer></footer>
+    <section class="brandhub" data-aos="fade-up">
+        <div class="brandhub__container">
+            <div class="row">
+                <div class="col-12 col-md-4 brandhub__item">
+                    <a href="#">
+                        <img src="img/logo_amg.svg" alt=""></a>
+                </div>
+                <div class="col-12  col-md-4 brandhub__item">
+                    <a href="#"><img src="img/logo_daimler.svg" alt=""></a>
+                </div>
+                <div class="col-12  col-md-4 brandhub__item">
+
+                    <a href="#"><img src="img/logo_smart.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" >
+        <div class="footer__container">
+            <p>This is the International website of Mercedes-Benz AG. Visitors from the U.S., please visit our U.S.
+                website <a href="#">www.mbusa.com.</a></p>
+        </div>
+        <div class="row footer__content">
+            <div class="col-3 item__Deu">
+                <a href="#">
+                    Deutsch
+                </a>
+                <span>|</span>
+                <span>English</span>
+            </div>
+            <div class="col-9 footer__item">
+                <div class="col-5 item item__1">
+                    <ul>
+                        <li><a href="#">Provider</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 item item__2">
+                    <ul>
+                        <li><a href="#">Newsfeed (RSS)</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Daimler AG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade modal__custom" id="vehicles" tabindex="-1" role="dialog" aria-labelledby="blogContent"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="vehicles_content">
+                        <div class="content__top">
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-overview.jpg" alt=""></div>
+                                <h3>Overview</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-a.jpg" alt=""></div>
+                                <h3>A-Class</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-b.jpg" alt=""></div>
+                                <h3>B-Class</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-c.jpg" alt=""></div>
+                                <h3>C-Class</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img">
+                                    <img src="img/car-cla.jpg" alt="">
+                                </div>
+                                <h3>CLA</h3>
+                            </div>
+                        </div>
+                        <div class="content__bottom">
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-cla.jpg" alt=""></div>
+                                <h3>CLS</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-B.jpg" alt=""></div>
+                                <h3>E-Class</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-c.jpg" alt=""></div>
+                                <h3>EQC</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img"><img src="img/car-cla.jpg" alt=""></div>
+                                <h3>G-Class</h3>
+                            </div>
+                            <div class="vehicles__item">
+                                <div class="item__img">
+                                    <img src="img/car-overview.jpg" alt="">
+                                </div>
+                                <h3>GLA</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu right -->
+    <div class="menu__right" data-aos="fade-in">
+        <div class="menu__container">
+            <div class="menu__item"><i class="fa fa-car-alt"></i>
+                <div class="item__hover">Product page</div>
+            </div>
+            <div class="menu__item">
+                <i class="fa fa-cogs"></i>
+                <div class="item__hover">
+                    Configurator
+                </div>
+            </div>
+            <div class="menu__item">
+                
+                    <i class="fa fa-share-alt"></i>
+                    <div class="item__hover d-flex">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top ">
+        <span>Top<i class="fa fa-angle-up"></i></span>
+    </a>
+
+
 
     <!-- SCRIPT BOOTSTRAP JQUERY hỗ trợ -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -562,24 +1037,40 @@
 
     <!-- Owl JS -->
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- Scoll JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Back To Top script -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+
+
     <script>
-     $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      dots:true,
-      responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-      }
-      })
+        $('.carousel__content').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                }
+
+
+            }
+        })
+
     </script>
+    <script>
+        AOS.init();
+      </script>
+
+
+
+
+
 
 
 </body>

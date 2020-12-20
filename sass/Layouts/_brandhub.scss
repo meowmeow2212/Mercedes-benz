@@ -1,0 +1,36 @@
+// BRANDHUB
+
+.brandhub{
+    background: $bg-color-0;
+    padding: $pd-2 0;
+
+    .brandhub__container{
+        width: 96%;
+         margin: 0 auto;
+         padding: $pd-2 0;
+         border-bottom: 1px solid #333;
+
+        .brandhub__item{
+            width: 300px;
+            height: 30px;
+            margin-bottom: $mg-2;
+            img{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+// max-width:768px
+@include reponsive("medium") {
+    .brandhub{
+        .brandhub__container{
+            .brandhub__item{
+              margin: $mg-2 0;
+            }
+        }
+    }
+}

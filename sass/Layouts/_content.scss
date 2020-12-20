@@ -1,9 +1,16 @@
-.content{
-    padding: 20px 0;
-    color:#fff;
-    max-width: 1680px;
-    margin: auto;
-    .content__heading{
-        list-style: none;
+// Content
+.content {
+    @include typeText($fs-1, $color-white-0, $fw-normal);
+    background: $bg-color-0;
+    padding: $pd-2 0;
+    .content__container {
+        width: 96%;
+        margin: 0 auto;
+        .content__header {
+            padding-bottom: $pd-2;
+            .content__Kra {
+                max-width: 27%;
+            }
+        }
     }
 }

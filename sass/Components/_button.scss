@@ -1,17 +1,17 @@
 // button
 .btn-black{
-    @include styleButton($color-black-0, $color-white-0, $pd-1, $pd-1 + 5);
-    @include typeText($fs-0, $color-white-0, $fw-bold-1);
+    @include styleButton($color-black-0, $color-btn-black-light, $pd-1 - 2, $pd-2 + 3);
+    @include typeText($fs-0, $color-white-0,  $fw-normal);
     &:hover{
-        @include styleHoverBtn($color-blue, $color-white-0, $color-white-0 );
+        @include styleHoverBtn($color-btn-black, $color-btn-black-light, $color-white-0);
     }
 }
 
 .btn-blue{
-    @include styleButton($color-blue, $color-gray-4, $pd-1, $pd-1 + 5);
-    @include typeText($fs-0, $color-gray-4, $fw-bold-1);
+    @include styleButton($color-blue, $color-blue, $pd-0, $pd-1 + 5);
+    @include typeText($fs-0, $color-white-0, $fw-normal);
     &:hover{
-        @include styleHoverBtn($color-white-0, $color-black-0, $color-black-0);
+        @include styleHoverBtn($color-blue-1, $color-blue-1, $color-white-0);
     }
 
 }

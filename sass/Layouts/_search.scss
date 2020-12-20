@@ -1,0 +1,29 @@
+// SEARCH
+.search {
+    background: $search-black-0;
+    .search__container {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: $pd-2;
+        padding-bottom: $pd-2;
+
+        .search__input {
+            
+            .form-control {
+                // border: 1px solid $bg-color-0;
+                border-right: none;
+                border-radius: none;
+                box-shadow: none;
+                 padding: $pd-2 + 2;
+            }
+            // .form-control::-webkit-input-placeholder {
+            //     @include typeText($fs-2 - 2, $color-black-light, 300);
+            // }
+
+            .input-group-text {
+                border: none;
+                background: $color-white-0;
+            }
+        }
+    }
+}

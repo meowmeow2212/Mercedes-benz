@@ -1,0 +1,47 @@
+// Channel
+.channel {
+    padding-top: 80px;
+    padding-bottom: $pd-2;
+
+    background: $bg-color-0;
+    .channel__container {
+        width: 85%;
+        margin: 0 auto;
+
+        .channel__item {
+            padding-right: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+            .channel__overlay {
+                height: 8px;
+                background: $color-blue;
+                width: 100%;
+                 transition: all 0.2s;
+                 opacity: 0;
+            }
+
+            &:hover {
+                .channel__overlay {
+                    transform: translateY(-8px);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+// max-width:768px
+@include reponsive("medium") {
+    .channel{
+        .channel__container{
+            .row{
+                align-items: baseline;
+            }
+        }
+    }
+}
